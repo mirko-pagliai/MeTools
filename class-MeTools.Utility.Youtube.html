@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class MeTools\Utility\Youtube | me-tools</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active main">
+					<a href="namespace-MeTools.html">
+						MeTools<span></span>
+					</a>
+
+						<ul>
+				<li class="main">
+					<a href="namespace-MeTools.Command.html">
+						Command<span></span>
+					</a>
+
+						<ul>
+				<li class="main">
+					<a href="namespace-MeTools.Command.Install.html">
+						Install					</a>
+
+						</li>
+							</ul></li>
+				<li class="main">
+					<a href="namespace-MeTools.Console.html">
+						Console					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-MeTools.Controller.html">
+						Controller<span></span>
+					</a>
+
+						<ul>
+				<li class="main">
+					<a href="namespace-MeTools.Controller.Component.html">
+						Component					</a>
+
+						</li>
+							</ul></li>
+				<li class="main">
+					<a href="namespace-MeTools.Core.html">
+						Core					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-MeTools.TestSuite.html">
+						TestSuite					</a>
+
+						</li>
+				<li class="active main">
+					<a href="namespace-MeTools.Utility.html">
+						Utility					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-MeTools.View.html">
+						View<span></span>
+					</a>
+
+						<ul>
+				<li class="main">
+					<a href="namespace-MeTools.View.Helper.html">
+						Helper					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-MeTools.View.Widget.html">
+						Widget					</a>
+
+						</li>
+							</ul></li></ul></li>
+				<li>
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-MeTools.Utility.Youtube.html">Youtube</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-MeTools.Utility.html" title="Summary of MeTools\Utility"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+				<li>
+					<a href="annotation-group-deprecated.html" title="List of elements with deprecated annotation">
+						<span>Deprecated</span>
+					</a>
+				</li>
+				<li>
+					<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+						<span>Todo</span>
+					</a>
+				</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Youtube</h1>
+
+
+	<div class="description">
+	<p>An utility to get information about YouTube videos</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-MeTools.html">MeTools</a>\<a href="namespace-MeTools.Utility.html">Utility</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-MeTools.Utility.Youtube.html#15-66" title="Go to source code">Utility/Youtube.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="getId" id="_getId">
+
+		<td class="attributes"><code>
+			 public static
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getId">#</a>
+		<code><a href="source-class-MeTools.Utility.Youtube.html#20-44" title="Go to source code">getId</a>( <span>string <var>$url</var></span> )</code>
+
+		<div class="description short">
+			<p>Parses a YouTube url and returns the YouTube ID</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Parses a YouTube url and returns the YouTube ID</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$url</var></dt>
+					<dd>Video url</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>Youtube ID or <code>false</code>
+				</div>
+
+
+				<h4>Used by</h4>
+				<div class="list">
+						MeTools\Utility\Youtube::getPreview()<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPreview" id="_getPreview">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPreview">#</a>
+		<code><a href="source-class-MeTools.Utility.Youtube.html#46-55" title="Go to source code">getPreview</a>( <span>string <var>$id</var></span> )</code>
+
+		<div class="description short">
+			<p>Gets the preview for a video</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets the preview for a video</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$id</var></dt>
+					<dd>YouTube ID or url</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+				<h4>Uses</h4>
+				<div class="list">
+						<code><a href="class-MeTools.Utility.Youtube.html#_getId">MeTools\Utility\Youtube::getId()</a></code><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getUrl" id="_getUrl">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getUrl">#</a>
+		<code><a href="source-class-MeTools.Utility.Youtube.html#57-65" title="Go to source code">getUrl</a>( <span>string <var>$id</var></span> )</code>
+
+		<div class="description short">
+			<p>Gets the url for a video</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets the url for a video</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$id</var></dt>
+					<dd>YouTube ID</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		me-tools API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
