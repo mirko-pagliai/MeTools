@@ -185,7 +185,7 @@ Cake\Core\Plugin
 		<b>Namespace:</b> <a href="namespace-MeTools.html">MeTools</a>\<a href="namespace-MeTools.Core.html">Core</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-MeTools.Core.Plugin.html#18-92" title="Go to source code">Core/Plugin.php</a>
+			<b>Located at</b> <a href="source-class-MeTools.Core.Plugin.html#19-80" title="Go to source code">Core/Plugin.php</a>
 		<br>
 	</div>
 
@@ -205,7 +205,7 @@ Cake\Core\Plugin
 
 		<td class="name"><div>
 		<a class="anchor" href="#_all">#</a>
-		<code><a href="source-class-MeTools.Core.Plugin.html#23-52" title="Go to source code">all</a>( <span>array <var>$options</var> = []</span> )</code>
+		<code><a href="source-class-MeTools.Core.Plugin.html#24-53" title="Go to source code">all</a>( <span>array <var>$options</var> = []</span> )</code>
 
 		<div class="description short">
 			<p>Gets all loaded plugins.</p>
@@ -243,23 +243,23 @@ Cake\Core\Plugin
 		<td class="attributes"><code>
 			 public static
 
-			string|array|boolean
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_path">#</a>
-		<code><a href="source-class-MeTools.Core.Plugin.html#54-91" title="Go to source code">path</a>( <span>string <var>$plugin</var></span>, <span>string|array <var>$file</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$check</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-MeTools.Core.Plugin.html#55-79" title="Go to source code">path</a>( <span>string <var>$plugin</var></span>, <span>string|null <var>$file</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$check</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>Gets a path for a plugin.
-It can also be used to get the path of plugin files.</p>
+It can also be used to get the path of a plugin file.</p>
 		</div>
 
 		<div class="description detailed hidden">
 			<p>Gets a path for a plugin.
-It can also be used to get the path of plugin files.</p>
+It can also be used to get the path of a plugin file.</p>
 
 
 				<h4>Parameters</h4>
@@ -267,18 +267,20 @@ It can also be used to get the path of plugin files.</p>
 					<dt><var>$plugin</var></dt>
 					<dd>Plugin name</dd>
 					<dt><var>$file</var></dt>
-					<dd>Files</dd>
+					<dd>File</dd>
 					<dt><var>$check</var></dt>
-					<dd>Checks if the files exist</dd>
+					<dd>Checks if the file exists</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					string|array|boolean<br><p>String or <code>false</code> if you asked the path of a
- plugin or of a single plugin file. Otherwise, an array if you asked
- the path of several plugin files</p>
+					string<br>Path of the plugin or path of the path of a plugin file
 				</div>
 
+				<h4>Throws</h4>
+				<div class="list">
+					Cake\Core\Exception\MissingPluginException
+				</div>
 
 
 
