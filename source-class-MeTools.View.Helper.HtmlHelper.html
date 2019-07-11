@@ -217,7 +217,7 @@
 </span></span><span id="34" class="l"><span class="php-comment">     */</span>
 </span><span id="35" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> __call(<span class="php-var">$name</span>, <span class="php-var">$params</span>)
 </span><span id="36" class="l">    {
-</span><span id="37" class="l">        is_true_or_fail(<span class="php-var">$params</span> &amp;&amp; <span class="php-keyword2">count</span>(<span class="php-var">$params</span>) &lt; <span class="php-num">3</span>, <span class="php-keyword2">sprintf</span>(<span class="php-quote">'Method `%s::%s()` does not exist'</span>, __CLASS__, <span class="php-var">$name</span>), Exception::<span class="php-keyword1">class</span>);
+</span><span id="37" class="l">        is_true_or_fail(<span class="php-keyword2">count</span>(<span class="php-var">$params</span>) &lt; <span class="php-num">3</span>, <span class="php-keyword2">sprintf</span>(<span class="php-quote">'Method `%s::%s()` does not exist'</span>, __CLASS__, <span class="php-var">$name</span>), Exception::<span class="php-keyword1">class</span>);
 </span><span id="38" class="l">
 </span><span id="39" class="l">        <span class="php-keyword1">return</span> self::tag(<span class="php-var">$name</span>, <span class="php-var">$params</span>[<span class="php-num">0</span>], <span class="php-keyword1">isset</span>(<span class="php-var">$params</span>[<span class="php-num">1</span>]) ? <span class="php-var">$params</span>[<span class="php-num">1</span>] : []);
 </span><span id="40" class="l">    }
