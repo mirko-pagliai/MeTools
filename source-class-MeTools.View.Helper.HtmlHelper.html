@@ -292,7 +292,7 @@
 </span></span><span id="109" class="l"><span class="php-comment">     *
 </span></span><span id="110" class="l"><span class="php-comment">     * If `$url` is not null, creates a link (`&lt;a&gt;` tag) with the appearance
 </span></span><span id="111" class="l"><span class="php-comment">     *  of a button.
-</span></span><span id="112" class="l"><span class="php-comment">     * @param string $title Button title
+</span></span><span id="112" class="l"><span class="php-comment">     * @param string|null $title Button title
 </span></span><span id="113" class="l"><span class="php-comment">     * @param string|array|null $url Cake-relative URL or array of URL
 </span></span><span id="114" class="l"><span class="php-comment">     *  parameters or external URL
 </span></span><span id="115" class="l"><span class="php-comment">     * @param array $options Array of options and HTML attributes
@@ -300,7 +300,7 @@
 </span></span><span id="117" class="l"><span class="php-comment">     * @uses link()
 </span></span><span id="118" class="l"><span class="php-comment">     * @uses tag()
 </span></span><span id="119" class="l"><span class="php-comment">     */</span>
-</span><span id="120" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> button(<span class="php-var">$title</span>, <span class="php-var">$url</span> = <span class="php-keyword1">null</span>, <span class="php-keyword1">array</span> <span class="php-var">$options</span> = [])
+</span><span id="120" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> button(<span class="php-var">$title</span> = <span class="php-keyword1">null</span>, <span class="php-var">$url</span> = <span class="php-keyword1">null</span>, <span class="php-keyword1">array</span> <span class="php-var">$options</span> = [])
 </span><span id="121" class="l">    {
 </span><span id="122" class="l">        <span class="php-var">$options</span> = optionsParser(<span class="php-var">$options</span>, [<span class="php-quote">'role'</span> =&gt; <span class="php-quote">'button'</span>])-&gt;addButtonClasses();
 </span><span id="123" class="l">
@@ -578,13 +578,13 @@
 </span><span id="395" class="l">
 </span><span id="396" class="l">    <span class="php-comment">/**
 </span></span><span id="397" class="l"><span class="php-comment">     * Creates an HTML link
-</span></span><span id="398" class="l"><span class="php-comment">     * @param string $title The content to be wrapped by &lt;a&gt; tags
+</span></span><span id="398" class="l"><span class="php-comment">     * @param string|null $title The content to be wrapped by &lt;a&gt; tags
 </span></span><span id="399" class="l"><span class="php-comment">     * @param string|array|null $url Cake-relative URL or array of URL
 </span></span><span id="400" class="l"><span class="php-comment">     *  parameters or external URL
 </span></span><span id="401" class="l"><span class="php-comment">     * @param array $options Array of options and HTML attributes
 </span></span><span id="402" class="l"><span class="php-comment">     * @return string
 </span></span><span id="403" class="l"><span class="php-comment">     */</span>
-</span><span id="404" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <span class="php-keyword2">link</span>(<span class="php-var">$title</span>, <span class="php-var">$url</span> = <span class="php-keyword1">null</span>, <span class="php-keyword1">array</span> <span class="php-var">$options</span> = [])
+</span><span id="404" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <span class="php-keyword2">link</span>(<span class="php-var">$title</span> = <span class="php-keyword1">null</span>, <span class="php-var">$url</span> = <span class="php-keyword1">null</span>, <span class="php-keyword1">array</span> <span class="php-var">$options</span> = [])
 </span><span id="405" class="l">    {
 </span><span id="406" class="l">        <span class="php-var">$options</span> = optionsParser(<span class="php-var">$options</span>, [<span class="php-quote">'escape'</span> =&gt; <span class="php-keyword1">false</span>, <span class="php-quote">'title'</span> =&gt; <span class="php-var">$title</span>]);
 </span><span id="407" class="l">        <span class="php-var">$options</span>-&gt;add(<span class="php-quote">'title'</span>, <span class="php-keyword2">trim</span>(h(<span class="php-keyword2">strip_tags</span>(<span class="php-var">$options</span>-&gt;get(<span class="php-quote">'title'</span>)))))-&gt;tooltip();

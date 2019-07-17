@@ -257,12 +257,12 @@
 </span></span><span id="74" class="l"><span class="php-comment">     *  the `postButton()` method.
 </span></span><span id="75" class="l"><span class="php-comment">     * Instead, to create a link with the appearance of a button, you should
 </span></span><span id="76" class="l"><span class="php-comment">     *  use the `button()` method provided by `HtmlHelper`.
-</span></span><span id="77" class="l"><span class="php-comment">     * @param string $title The button label or an image
+</span></span><span id="77" class="l"><span class="php-comment">     * @param string|null $title The button label or an image
 </span></span><span id="78" class="l"><span class="php-comment">     * @param array $options HTML attributes and options
 </span></span><span id="79" class="l"><span class="php-comment">     * @return string
 </span></span><span id="80" class="l"><span class="php-comment">     * @see postButton(), MeTools\View\Helper\HtmlHelper::button()
 </span></span><span id="81" class="l"><span class="php-comment">     */</span>
-</span><span id="82" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> button(<span class="php-var">$title</span>, <span class="php-keyword1">array</span> <span class="php-var">$options</span> = [])
+</span><span id="82" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> button(<span class="php-var">$title</span> = <span class="php-keyword1">null</span>, <span class="php-keyword1">array</span> <span class="php-var">$options</span> = [])
 </span><span id="83" class="l">    {
 </span><span id="84" class="l">        <span class="php-var">$options</span> = optionsParser(<span class="php-var">$options</span>, [<span class="php-quote">'type'</span> =&gt; <span class="php-quote">'button'</span>]);
 </span><span id="85" class="l">        <span class="php-var">$options</span>-&gt;addButtonClasses(<span class="php-var">$options</span>-&gt;contains(<span class="php-quote">'type'</span>, <span class="php-quote">'submit'</span>) ? <span class="php-quote">'success'</span> : <span class="php-quote">'primary'</span>);
@@ -513,14 +513,14 @@
 </span></span><span id="330" class="l"><span class="php-comment">     * To create a normal button, you should use the `button()` method.
 </span></span><span id="331" class="l"><span class="php-comment">     * To create a button with the appearance of a link, you should use the
 </span></span><span id="332" class="l"><span class="php-comment">     *  `button()` method provided by the `HtmlHelper`.
-</span></span><span id="333" class="l"><span class="php-comment">     * @param string $title Button title
+</span></span><span id="333" class="l"><span class="php-comment">     * @param string|null $title Button title
 </span></span><span id="334" class="l"><span class="php-comment">     * @param string|array|null $url Cake-relative URL or array of URL
 </span></span><span id="335" class="l"><span class="php-comment">     *  parameters or external URL
 </span></span><span id="336" class="l"><span class="php-comment">     * @param array $options Array of options and HTML attributes
 </span></span><span id="337" class="l"><span class="php-comment">     * @return string Html code
 </span></span><span id="338" class="l"><span class="php-comment">     * @uses postLink()
 </span></span><span id="339" class="l"><span class="php-comment">     */</span>
-</span><span id="340" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> postButton(<span class="php-var">$title</span>, <span class="php-var">$url</span>, <span class="php-keyword1">array</span> <span class="php-var">$options</span> = [])
+</span><span id="340" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> postButton(<span class="php-var">$title</span> = <span class="php-keyword1">null</span>, <span class="php-var">$url</span> = <span class="php-keyword1">null</span>, <span class="php-keyword1">array</span> <span class="php-var">$options</span> = [])
 </span><span id="341" class="l">    {
 </span><span id="342" class="l">        <span class="php-var">$options</span> = optionsParser(<span class="php-var">$options</span>)-&gt;add(<span class="php-quote">'role'</span>, <span class="php-quote">'button'</span>)-&gt;addButtonClasses();
 </span><span id="343" class="l">
@@ -535,13 +535,13 @@
 </span></span><span id="352" class="l"><span class="php-comment">     *
 </span></span><span id="353" class="l"><span class="php-comment">     * To create a normal link, you should use the `link()` method of the
 </span></span><span id="354" class="l"><span class="php-comment">     *  `HtmlHelper`.
-</span></span><span id="355" class="l"><span class="php-comment">     * @param string $title The content to be wrapped by &lt;a&gt; tags
+</span></span><span id="355" class="l"><span class="php-comment">     * @param string|null $title The content to be wrapped by &lt;a&gt; tags
 </span></span><span id="356" class="l"><span class="php-comment">     * @param string|array|null $url Cake-relative URL or array of URL
 </span></span><span id="357" class="l"><span class="php-comment">     *  parameters or external URL
 </span></span><span id="358" class="l"><span class="php-comment">     * @param array $options Array of options and HTML attributes
 </span></span><span id="359" class="l"><span class="php-comment">     * @return string
 </span></span><span id="360" class="l"><span class="php-comment">     */</span>
-</span><span id="361" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> postLink(<span class="php-var">$title</span>, <span class="php-var">$url</span> = <span class="php-keyword1">null</span>, <span class="php-keyword1">array</span> <span class="php-var">$options</span> = [])
+</span><span id="361" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> postLink(<span class="php-var">$title</span> = <span class="php-keyword1">null</span>, <span class="php-var">$url</span> = <span class="php-keyword1">null</span>, <span class="php-keyword1">array</span> <span class="php-var">$options</span> = [])
 </span><span id="362" class="l">    {
 </span><span id="363" class="l">        <span class="php-var">$options</span> = optionsParser(<span class="php-var">$options</span>, [<span class="php-quote">'escape'</span> =&gt; <span class="php-keyword1">false</span>, <span class="php-quote">'title'</span> =&gt; <span class="php-var">$title</span>]);
 </span><span id="364" class="l">        <span class="php-var">$options</span>-&gt;add(<span class="php-quote">'title'</span>, <span class="php-keyword2">trim</span>(h(<span class="php-keyword2">strip_tags</span>(<span class="php-var">$options</span>-&gt;get(<span class="php-quote">'title'</span>)))))-&gt;tooltip();
