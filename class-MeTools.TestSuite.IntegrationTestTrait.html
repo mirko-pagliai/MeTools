@@ -190,7 +190,7 @@
 		<b>Namespace:</b> <a href="namespace-MeTools.html">MeTools</a>\<a href="namespace-MeTools.TestSuite.html">TestSuite</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-MeTools.TestSuite.IntegrationTestTrait.html#19-93" title="Go to source code">TestSuite/IntegrationTestTrait.php</a>
+			<b>Located at</b> <a href="source-class-MeTools.TestSuite.IntegrationTestTrait.html#20-108" title="Go to source code">TestSuite/IntegrationTestTrait.php</a>
 		<br>
 	</div>
 
@@ -210,7 +210,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_controllerSpy">#</a>
-		<code><a href="source-class-MeTools.TestSuite.IntegrationTestTrait.html#28-54" title="Go to source code">controllerSpy</a>( <span>Cake\Event\Event <var>$event</var></span>, <span>Cake\Controller\Controller|null <var>$controller</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-MeTools.TestSuite.IntegrationTestTrait.html#29-55" title="Go to source code">controllerSpy</a>( <span>Cake\Event\Event <var>$event</var></span>, <span>Cake\Controller\Controller|null <var>$controller</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Adds additional event spies to the controller/view event manager</p>
@@ -247,7 +247,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_assertCookieIsEmpty">#</a>
-		<code><a href="source-class-MeTools.TestSuite.IntegrationTestTrait.html#56-67" title="Go to source code">assertCookieIsEmpty</a>( <span>string <var>$name</var></span>, <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-MeTools.TestSuite.IntegrationTestTrait.html#57-69" title="Go to source code">assertCookieIsEmpty</a>( <span>string <var>$name</var></span>, <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			<p>Asserts that a cookie is empty</p>
@@ -285,7 +285,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_assertFlashMessage">#</a>
-		<code><a href="source-class-MeTools.TestSuite.IntegrationTestTrait.html#69-80" title="Go to source code">assertFlashMessage</a>( <span>string <var>$expected</var></span>, <span>integer <var>$key</var> = <span class="php-num">0</span></span>, <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-MeTools.TestSuite.IntegrationTestTrait.html#71-82" title="Go to source code">assertFlashMessage</a>( <span>string <var>$expected</var></span>, <span>integer <var>$key</var> = <span class="php-num">0</span></span>, <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			<p>Asserts flash message contents</p>
@@ -325,7 +325,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_assertResponseOkAndNotEmpty">#</a>
-		<code><a href="source-class-MeTools.TestSuite.IntegrationTestTrait.html#82-92" title="Go to source code">assertResponseOkAndNotEmpty</a>( <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-MeTools.TestSuite.IntegrationTestTrait.html#84-94" title="Go to source code">assertResponseOkAndNotEmpty</a>( <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			<p>Asserts that the response status code is in the 2xx range and the
@@ -345,6 +345,47 @@
 
 
 
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="assertSessionEmpty" id="_assertSessionEmpty">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_assertSessionEmpty">#</a>
+		<code><a href="source-class-MeTools.TestSuite.IntegrationTestTrait.html#96-107" title="Go to source code">assertSessionEmpty</a>( <span>string <var>$path</var></span>, <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Asserts session is empty</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Asserts session is empty</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd>The session data path. Uses Hash::get() compatible notation</dd>
+					<dt><var>$message</var></dt>
+					<dd>The failure message that will be appended to the generated message</dd>
+				</dl></div>
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						2.18.9<br>
+				</div>
 
 
 		</div>

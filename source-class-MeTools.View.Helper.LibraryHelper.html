@@ -356,13 +356,13 @@
 </span><span id="173" class="l">
 </span><span id="174" class="l">        <span class="php-comment">//Checks for `APP/webroot/js/ckeditor_init.php`</span>
 </span><span id="175" class="l">        <span class="php-keyword1">if</span> (<span class="php-keyword2">is_readable</span>(WWW_ROOT . <span class="php-quote">'js'</span> . DS . <span class="php-quote">'ckeditor_init.php'</span>)) {
-</span><span id="176" class="l">            <span class="php-var">$scripts</span>[] = <span class="php-quote">'ckeditor_init.php?'</span>;
+</span><span id="176" class="l">            <span class="php-var">$scripts</span>[] = <span class="php-quote">'ckeditor_init.php?type=js'</span>;
 </span><span id="177" class="l">        <span class="php-comment">//Checks for `APP/webroot/js/ckeditor_init.js`</span>
 </span><span id="178" class="l">        } <span class="php-keyword1">elseif</span> (<span class="php-keyword2">is_readable</span>(WWW_ROOT . <span class="php-quote">'js'</span> . DS . <span class="php-quote">'ckeditor_init.js'</span>)) {
 </span><span id="179" class="l">            <span class="php-var">$scripts</span>[] = <span class="php-quote">'ckeditor_init'</span>;
 </span><span id="180" class="l">        <span class="php-comment">//Else, uses `APP/plugin/MeTools/webroot/js/ckeditor_init.js`</span>
 </span><span id="181" class="l">        } <span class="php-keyword1">else</span> {
-</span><span id="182" class="l">            <span class="php-var">$scripts</span>[] = <span class="php-quote">'MeTools.ckeditor_init.php?'</span>;
+</span><span id="182" class="l">            <span class="php-var">$scripts</span>[] = <span class="php-quote">'MeTools.ckeditor_init.php?type=js'</span>;
 </span><span id="183" class="l">        }
 </span><span id="184" class="l">
 </span><span id="185" class="l">        <span class="php-var">$this</span>-&gt;Html-&gt;script(<span class="php-var">$scripts</span>, [<span class="php-quote">'block'</span> =&gt; <span class="php-quote">'script_bottom'</span>]);

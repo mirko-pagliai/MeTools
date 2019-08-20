@@ -206,7 +206,7 @@ Cake\TestSuite\TestCase
 		<b>Namespace:</b> <a href="namespace-MeTools.html">MeTools</a>\<a href="namespace-MeTools.TestSuite.html">TestSuite</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-MeTools.TestSuite.TestCase.html#24-109" title="Go to source code">TestSuite/TestCase.php</a>
+			<b>Located at</b> <a href="source-class-MeTools.TestSuite.TestCase.html#24-129" title="Go to source code">TestSuite/TestCase.php</a>
 		<br>
 	</div>
 
@@ -256,7 +256,7 @@ Cake\TestSuite\TestCase
 
 		<td class="name"><div>
 		<a class="anchor" href="#_tearDown">#</a>
-		<code><a href="source-class-MeTools.TestSuite.TestCase.html#44-59" title="Go to source code">tearDown</a>( )</code>
+		<code><a href="source-class-MeTools.TestSuite.TestCase.html#44-61" title="Go to source code">tearDown</a>( )</code>
 
 		<div class="description short">
 			<p>Called after every test method</p>
@@ -286,7 +286,7 @@ Cake\TestSuite\TestCase
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getLogFullPath">#</a>
-		<code><a href="source-class-MeTools.TestSuite.TestCase.html#61-74" title="Go to source code">getLogFullPath</a>( <span>string <var>$filename</var></span> )</code>
+		<code><a href="source-class-MeTools.TestSuite.TestCase.html#63-76" title="Go to source code">getLogFullPath</a>( <span>string <var>$filename</var></span> )</code>
 
 		<div class="description short">
 			<p>Internal method to get a log full path</p>
@@ -322,6 +322,51 @@ Cake\TestSuite\TestCase
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="getTable" id="_getTable">
+
+		<td class="attributes"><code>
+			 protected 
+
+			Cake\ORM\Table|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTable">#</a>
+		<code><a href="source-class-MeTools.TestSuite.TestCase.html#78-94" title="Go to source code">getTable</a>( <span>string <var>$alias</var></span>, <span>array <var>$options</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Get a table instance from the registry</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get a table instance from the registry</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$alias</var></dt>
+					<dd>The alias name you want to get</dd>
+					<dt><var>$options</var></dt>
+					<dd>The options you want to build the table with</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					Cake\ORM\Table|null
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						2.18.11<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="assertLogContains" id="_assertLogContains">
 
 		<td class="attributes"><code>
@@ -334,7 +379,7 @@ Cake\TestSuite\TestCase
 
 		<td class="name"><div>
 		<a class="anchor" href="#_assertLogContains">#</a>
-		<code><a href="source-class-MeTools.TestSuite.TestCase.html#76-97" title="Go to source code">assertLogContains</a>( <span>string <var>$expectedContent</var></span>, <span>string <var>$filename</var></span>, <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-MeTools.TestSuite.TestCase.html#96-117" title="Go to source code">assertLogContains</a>( <span>string <var>$expectedContent</var></span>, <span>string <var>$filename</var></span>, <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			<p>Asserts log file contents</p>
@@ -378,7 +423,7 @@ Cake\TestSuite\TestCase
 
 		<td class="name"><div>
 		<a class="anchor" href="#_deleteLog">#</a>
-		<code><a href="source-class-MeTools.TestSuite.TestCase.html#99-108" title="Go to source code">deleteLog</a>( <span>string <var>$filename</var></span> )</code>
+		<code><a href="source-class-MeTools.TestSuite.TestCase.html#119-128" title="Go to source code">deleteLog</a>( <span>string <var>$filename</var></span> )</code>
 
 		<div class="description short">
 			<p>Deletes a log file</p>
