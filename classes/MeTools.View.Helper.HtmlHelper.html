@@ -1,0 +1,762 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>me-tools » \MeTools\View\Helper\HtmlHelper</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">me-tools</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/MeTools.html"><i class="icon-th"></i> MeTools</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">1</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+</div>
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list">
+<li class="nav-header">
+<i title="Methods" class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___call" title="__call() :: Missing method handler."><span class="description">Missing method handler.</span><pre>__call()</pre></a></li>
+<li class="method public "><a href="#method_badge" title="badge() :: Creates a badge, according to Bootstrap"><span class="description">Creates a badge, according to Bootstrap</span><pre>badge()</pre></a></li>
+<li class="method public "><a href="#method_button" title="button() :: Creates a button (`&lt;button&gt;` tag)."><span class="description">Creates a button (`&lt;button&gt;` tag).</span><pre>button()</pre></a></li>
+<li class="method public "><a href="#method_css" title="css() :: Adds a css file to the layout."><span class="description">Adds a css file to the layout.</span><pre>css()</pre></a></li>
+<li class="method public "><a href="#method_cssBlock" title="cssBlock() :: Wrap `$css` in a style tag"><span class="description">Wrap `$css` in a style tag</span><pre>cssBlock()</pre></a></li>
+<li class="method public "><a href="#method_cssEnd" title="cssEnd() :: End a buffered section of css capturing."><span class="description">End a buffered section of css capturing.</span><pre>cssEnd()</pre></a></li>
+<li class="method public "><a href="#method_cssStart" title="cssStart() :: Begin a CSS block that captures output until `cssEnd()` is called. This
+ capturing block will capture all output between the methods and create
+ a cssBlock from it"><span class="description">Begin a CSS block that captures output until `cssEnd()` is called. This
+ capturing block will capture all output between the methods and create
+ a cssBlock from it</span><pre>cssStart()</pre></a></li>
+<li class="method public "><a href="#method_heading" title="heading() :: Creates an heading, according to Bootstrap."><span class="description">Creates an heading, according to Bootstrap.</span><pre>heading()</pre></a></li>
+<li class="method public "><a href="#method_hr" title="hr() :: Creates an horizontal rule (`&lt;hr&gt;` tag)"><span class="description">Creates an horizontal rule (`&lt;hr&gt;` tag)</span><pre>hr()</pre></a></li>
+<li class="method public "><a href="#method_iframe" title="iframe() :: Create an `&lt;iframe&gt;` element."><span class="description">Create an `&lt;iframe&gt;` element.</span><pre>iframe()</pre></a></li>
+<li class="method public "><a href="#method_image" title="image() :: Creates a formatted `&lt;img&gt;` element"><span class="description">Creates a formatted `&lt;img&gt;` element</span><pre>image()</pre></a></li>
+<li class="method public "><a href="#method_img" title="img() :: Alias for `image()` method"><span class="description">Alias for `image()` method</span><pre>img()</pre></a></li>
+<li class="method public "><a href="#method_label" title="label() :: Create a label, according to the Bootstrap component."><span class="description">Create a label, according to the Bootstrap component.</span><pre>label()</pre></a></li>
+<li class="method public "><a href="#method_li" title="li() :: Returns an element list (`&lt;li&gt;`)."><span class="description">Returns an element list (`&lt;li&gt;`).</span><pre>li()</pre></a></li>
+<li class="method public "><a href="#method_link" title="link() :: Creates an HTML link"><span class="description">Creates an HTML link</span><pre>link()</pre></a></li>
+<li class="method public "><a href="#method_meta" title="meta() :: Creates a link to an external resource and handles basic meta tags"><span class="description">Creates a link to an external resource and handles basic meta tags</span><pre>meta()</pre></a></li>
+<li class="method public "><a href="#method_nestedList" title="nestedList() :: Returns a list (`&lt;ol&gt;` or `&lt;ul&gt;` tag)"><span class="description">Returns a list (`&lt;ol&gt;` or `&lt;ul&gt;` tag)</span><pre>nestedList()</pre></a></li>
+<li class="method public "><a href="#method_ol" title="ol() :: Returns an unordered list (`&lt;ol&gt;` tag)"><span class="description">Returns an unordered list (`&lt;ol&gt;` tag)</span><pre>ol()</pre></a></li>
+<li class="method public "><a href="#method_para" title="para() :: Returns a formatted `&lt;p&gt;` tag."><span class="description">Returns a formatted `&lt;p&gt;` tag.</span><pre>para()</pre></a></li>
+<li class="method public "><a href="#method_script" title="script() :: Adds a js file to the layout."><span class="description">Adds a js file to the layout.</span><pre>script()</pre></a></li>
+<li class="method public "><a href="#method_scriptBlock" title="scriptBlock() :: Returns a Javascript code block"><span class="description">Returns a Javascript code block</span><pre>scriptBlock()</pre></a></li>
+<li class="method public "><a href="#method_scriptStart" title="scriptStart() :: Starts capturing output for Javascript code."><span class="description">Starts capturing output for Javascript code.</span><pre>scriptStart()</pre></a></li>
+<li class="method public "><a href="#method_shareaholic" title='shareaholic() :: Returns the Shareaholic "share buttons".'><span class="description">Returns the Shareaholic "share buttons".</span><pre>shareaholic()</pre></a></li>
+<li class="method public "><a href="#method_tag" title="tag() :: Returns a formatted block tag"><span class="description">Returns a formatted block tag</span><pre>tag()</pre></a></li>
+<li class="method public "><a href="#method_ul" title="ul() :: Returns an unordered list (`&lt;ul&gt;` tag)"><span class="description">Returns an unordered list (`&lt;ul&gt;` tag)</span><pre>ul()</pre></a></li>
+<li class="method public "><a href="#method_viewport" title="viewport() :: Adds the `viewport` meta tag. By default, it uses options as required
+ by Bootstrap"><span class="description">Adds the `viewport` meta tag. By default, it uses options as required
+ by Bootstrap</span><pre>viewport()</pre></a></li>
+<li class="method public "><a href="#method_youtube" title="youtube() :: Adds a YouTube video."><span class="description">Adds a YouTube video.</span><pre>youtube()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i title="Properties" class="icon-custom icon-property"></i> Properties
+                    <ul><li class="property public "><a href="#property_helpers" title="$helpers() :: Helpers"><span class="description"></span><pre>$helpers</pre></a></li></ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a xmlns:php="http://php.net/xsl" id="\MeTools\View\Helper\HtmlHelper"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
+<li>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/MeTools.html">MeTools</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/MeTools.View.html">View</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/MeTools.View.Helper.html">Helper</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/MeTools.View.Helper.HtmlHelper.html">HtmlHelper</a>
+</li>
+</ul>
+<div xmlns:php="http://php.net/xsl" class="element class">
+<p class="short_description">Provides functionalities for HTML code</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+<h3>
+<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___call"></a><div class="element clickable method public method___call " data-toggle="collapse" data-target=".method___call .collapse" title="public">
+<h2>Missing method handler.</h2>
+<pre>__call(string $name, array $params) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>If you pass no more than two parameters, it tries to generate a html
+tag with the name of the method and works as alias of <code>tag()</code>.</p></div>
+<table class="table table-bordered"><tr>
+<th>uses</th>
+<td><a href="../classes/MeTools.View.Helper.HtmlHelper.html#method_tag">\MeTools\View\Helper\HtmlHelper::tag()</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>Name of the tag</p></div>
+<div class="subelement argument">
+<h4>$params</h4>
+<code>array</code><p>Params for the method</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_badge"></a><div class="element clickable method public method_badge " data-toggle="collapse" data-target=".method_badge .collapse" title="public">
+<h2>Creates a badge, according to Bootstrap</h2>
+<pre>badge(string $text, array $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="http://getbootstrap.com/components/#badges">Bootstrap documentation</a></td>
+</tr>
+<tr>
+<th>uses</th>
+<td><a href="../classes/MeTools.View.Helper.HtmlHelper.html#method_tag">\MeTools\View\Helper\HtmlHelper::tag()</a></td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$text</h4>
+<code>string</code><p>Badge text</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>Array of options and HTML attributes</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_button"></a><div class="element clickable method public method_button " data-toggle="collapse" data-target=".method_button .collapse" title="public">
+<h2>Creates a button (`&lt;button&gt;` tag).</h2>
+<pre>button(string|null $title<code> = null</code>, string|array|null $url<code> = null</code>, array $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>If <code>$url</code> is not null, creates a link (<code>&lt;a&gt;</code> tag) with the appearance
+of a button.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>uses</th>
+<td><a href="../classes/MeTools.View.Helper.HtmlHelper.html#method_link">\MeTools\View\Helper\HtmlHelper::link()</a></td>
+</tr>
+<tr>
+<th>uses</th>
+<td><a href="../classes/MeTools.View.Helper.HtmlHelper.html#method_tag">\MeTools\View\Helper\HtmlHelper::tag()</a></td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$title</h4>
+<code>string</code><code>null</code><p>Button title</p></div>
+<div class="subelement argument">
+<h4>$url</h4>
+<code>string</code><code>array</code><code>null</code><p>Cake-relative URL or array of URL
+parameters or external URL</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>Array of options and HTML attributes</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_css"></a><div class="element clickable method public method_css " data-toggle="collapse" data-target=".method_css .collapse" title="public">
+<h2>Adds a css file to the layout.</h2>
+<pre>css(mixed $path, array $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>If it's used in the layout, you should set the <code>inline</code> option to <code>true</code>.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$path</h4>
+<code>mixed</code><p>CSS filename or an array of CSS filenames</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>Array of options and HTML attributes</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Html, `<link>` or `<style>` tag</div>
+</div></div>
+</div>
+<a id="method_cssBlock"></a><div class="element clickable method public method_cssBlock " data-toggle="collapse" data-target=".method_cssBlock .collapse" title="public">
+<h2>Wrap `$css` in a style tag</h2>
+<pre>cssBlock(string $css, array $options<code> = array()</code>) : string | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$css</h4>
+<code>string</code><p>The CSS code to wrap</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>The options to use. Options not listed above will
+ be treated as HTML attributes</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code><code>null</code>String or `null`, depending on the value of
+ $options['block']`</div>
+</div></div>
+</div>
+<a id="method_cssEnd"></a><div class="element clickable method public method_cssEnd " data-toggle="collapse" data-target=".method_cssEnd .collapse" title="public">
+<h2>End a buffered section of css capturing.</h2>
+<pre>cssEnd() : string | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Generates a style tag inline or appends to specified view block
+depending on the settings used when the cssBlock was started.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code><code>null</code>Depending on the settings of `cssStart()`, either a
+ style tag or null</div>
+</div></div>
+</div>
+<a id="method_cssStart"></a><div class="element clickable method public method_cssStart " data-toggle="collapse" data-target=".method_cssStart .collapse" title="public">
+<h2>Begin a CSS block that captures output until `cssEnd()` is called. This
+ capturing block will capture all output between the methods and create
+ a cssBlock from it</h2>
+<pre>cssStart(array $options<code> = array()</code>) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>Options for the code block.</p></div>
+</div></div>
+</div>
+<a id="method_heading"></a><div class="element clickable method public method_heading " data-toggle="collapse" data-target=".method_heading .collapse" title="public">
+<h2>Creates an heading, according to Bootstrap.</h2>
+<pre>heading(string $text, array $options<code> = array()</code>, string|null $small<code> = null</code>, array $smallOptions<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This method is useful if you want to create an heading with a secondary
+text. In this case you have to use the <code>small</code> option.</p>
+<p>By default, this method creates an <code>&lt;h2&gt;</code> tag. To create a different
+tag, you have to use the <code>type</code> option.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="http://getbootstrap.com/css/#type-headings">Bootstrap documentation</a></td>
+</tr>
+<tr>
+<th>uses</th>
+<td><a href="#">\MeTools\View\Helper\small()</a></td>
+</tr>
+<tr>
+<th>uses</th>
+<td><a href="../classes/MeTools.View.Helper.HtmlHelper.html#method_tag">\MeTools\View\Helper\HtmlHelper::tag()</a></td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$text</h4>
+<code>string</code><p>Heading text</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>Array of options and HTML attributes</p></div>
+<div class="subelement argument">
+<h4>$small</h4>
+<code>string</code><code>null</code><p>Small text</p></div>
+<div class="subelement argument">
+<h4>$smallOptions</h4>
+<code>array</code><p>Array of options and HTML attributes</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_hr"></a><div class="element clickable method public method_hr " data-toggle="collapse" data-target=".method_hr .collapse" title="public">
+<h2>Creates an horizontal rule (`&lt;hr&gt;` tag)</h2>
+<pre>hr(array $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>uses</th>
+<td><a href="../classes/MeTools.View.Helper.HtmlHelper.html#method_tag">\MeTools\View\Helper\HtmlHelper::tag()</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>Array of options and HTML attributes</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_iframe"></a><div class="element clickable method public method_iframe " data-toggle="collapse" data-target=".method_iframe .collapse" title="public">
+<h2>Create an `&lt;iframe&gt;` element.</h2>
+<pre>iframe(string $url, array $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>You can use the <code>$ratio</code> option (valid values: <code>16by9</code> or <code>4by3</code>) to
+create a responsive embed.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="http://getbootstrap.com/components/#responsive-embed">Responsive embed</a></td>
+</tr>
+<tr>
+<th>uses</th>
+<td><a href="#">\MeTools\View\Helper\div()</a></td>
+</tr>
+<tr>
+<th>uses</th>
+<td><a href="../classes/MeTools.View.Helper.HtmlHelper.html#method_tag">\MeTools\View\Helper\HtmlHelper::tag()</a></td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$url</h4>
+<code>string</code><p>Url for the iframe</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>Array of options and HTML attributes</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_image"></a><div class="element clickable method public method_image " data-toggle="collapse" data-target=".method_image .collapse" title="public">
+<h2>Creates a formatted `&lt;img&gt;` element</h2>
+<pre>image(string $path, array $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$path</h4>
+<code>string</code><p>Path to the image file, relative to the
+<code>APP/webroot/img/</code> directory</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>Array of options and HTML attributes</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_img"></a><div class="element clickable method public method_img " data-toggle="collapse" data-target=".method_img .collapse" title="public">
+<h2>Alias for `image()` method</h2>
+<pre>img() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="../classes/MeTools.View.Helper.HtmlHelper.html#method_image">\MeTools\View\Helper\HtmlHelper::image()</a></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_label"></a><div class="element clickable method public method_label " data-toggle="collapse" data-target=".method_label .collapse" title="public">
+<h2>Create a label, according to the Bootstrap component.</h2>
+<pre>label(string $text, array $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This method creates only a label element. Not to be confused with the
+<code>label()</code> method provided by <code>Formhelper</code>, which creates a label
+for a form input.</p>
+<p>You can set the type of label using the <code>type</code> option.
+The values supported by Bootstrap are: <code>default</code>, <code>primary</code>, <code>success</code>,
+<code>info</code>, <code>warning</code> and <code>danger</code>.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="http://getbootstrap.com/components/#labels">Bootstrap documentation</a></td>
+</tr>
+<tr>
+<th>uses</th>
+<td><a href="../classes/MeTools.View.Helper.HtmlHelper.html#method_tag">\MeTools\View\Helper\HtmlHelper::tag()</a></td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$text</h4>
+<code>string</code><p>Label text</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>HTML attributes of the list tag</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_li"></a><div class="element clickable method public method_li " data-toggle="collapse" data-target=".method_li .collapse" title="public">
+<h2>Returns an element list (`&lt;li&gt;`).</h2>
+<pre>li(string|array $element, array $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>If <code>$element</code> is an array, the same <code>$options</code> will be applied to all
+elements</p></div>
+<table class="table table-bordered"><tr>
+<th>uses</th>
+<td><a href="../classes/MeTools.View.Helper.HtmlHelper.html#method_tag">\MeTools\View\Helper\HtmlHelper::tag()</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$element</h4>
+<code>string</code><code>array</code><p>Element or elements</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>HTML attributes of the list tag</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_link"></a><div class="element clickable method public method_link " data-toggle="collapse" data-target=".method_link .collapse" title="public">
+<h2>Creates an HTML link</h2>
+<pre>link(string|null $title<code> = null</code>, string|array|null $url<code> = null</code>, array $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$title</h4>
+<code>string</code><code>null</code><p>The content to be wrapped by <a> tags</p></div>
+<div class="subelement argument">
+<h4>$url</h4>
+<code>string</code><code>array</code><code>null</code><p>Cake-relative URL or array of URL
+parameters or external URL</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>Array of options and HTML attributes</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_meta"></a><div class="element clickable method public method_meta " data-toggle="collapse" data-target=".method_meta .collapse" title="public">
+<h2>Creates a link to an external resource and handles basic meta tags</h2>
+<pre>meta(string|array $type, string|array|null $content<code> = null</code>, array $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$type</h4>
+<code>string</code><code>array</code><p>The title of the external resource</p></div>
+<div class="subelement argument">
+<h4>$content</h4>
+<code>string</code><code>array</code><code>null</code><p>The address of the external resource
+ or string for content attribute</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>Other attributes for the generated tag. If the
+type attribute is html, rss, atom, or icon, the mime-type is returned</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>A completed `<link />` element</div>
+</div></div>
+</div>
+<a id="method_nestedList"></a><div class="element clickable method public method_nestedList " data-toggle="collapse" data-target=".method_nestedList .collapse" title="public">
+<h2>Returns a list (`&lt;ol&gt;` or `&lt;ul&gt;` tag)</h2>
+<pre>nestedList(array $list, array $options<code> = array()</code>, array $itemOptions<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$list</h4>
+<code>array</code><p>Elements list</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>HTML attributes of the list tag</p></div>
+<div class="subelement argument">
+<h4>$itemOptions</h4>
+<code>array</code><p>HTML attributes of the list items</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_ol"></a><div class="element clickable method public method_ol " data-toggle="collapse" data-target=".method_ol .collapse" title="public">
+<h2>Returns an unordered list (`&lt;ol&gt;` tag)</h2>
+<pre>ol(array $list, array $options<code> = array()</code>, array $itemOptions<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>uses</th>
+<td><a href="../classes/MeTools.View.Helper.HtmlHelper.html#method_nestedList">\MeTools\View\Helper\HtmlHelper::nestedList()</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$list</h4>
+<code>array</code><p>Elements list</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>HTML attributes of the list tag</p></div>
+<div class="subelement argument">
+<h4>$itemOptions</h4>
+<code>array</code><p>HTML attributes of the list items</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_para"></a><div class="element clickable method public method_para " data-toggle="collapse" data-target=".method_para .collapse" title="public">
+<h2>Returns a formatted `&lt;p&gt;` tag.</h2>
+<pre>para(string|null $class<code> = null</code>, string|null $text<code> = null</code>, array $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$class</h4>
+<code>string</code><code>null</code><p>Class name</p></div>
+<div class="subelement argument">
+<h4>$text</h4>
+<code>string</code><code>null</code><p>Paragraph text</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>Array of options and HTML attributes</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_script"></a><div class="element clickable method public method_script " data-toggle="collapse" data-target=".method_script .collapse" title="public">
+<h2>Adds a js file to the layout.</h2>
+<pre>script(mixed $url, array $options<code> = array()</code>) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>If it's used in the layout, you should set the <code>inline</code> option to <code>true</code>.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$url</h4>
+<code>mixed</code><p>Javascript files as string or array</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>Array of options and HTML attributes</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>String of `<script />` tags or `null` if `$inline` is false
+ or if `$once` is true and the file has been included before</div>
+</div></div>
+</div>
+<a id="method_scriptBlock"></a><div class="element clickable method public method_scriptBlock " data-toggle="collapse" data-target=".method_scriptBlock .collapse" title="public">
+<h2>Returns a Javascript code block</h2>
+<pre>scriptBlock(string $code, array $options<code> = array()</code>) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$code</h4>
+<code>string</code><p>Javascript code</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>Array of options and HTML attributes</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>A script tag or `null`</div>
+</div></div>
+</div>
+<a id="method_scriptStart"></a><div class="element clickable method public method_scriptStart " data-toggle="collapse" data-target=".method_scriptStart .collapse" title="public">
+<h2>Starts capturing output for Javascript code.</h2>
+<pre>scriptStart(array $options<code> = array()</code>) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>To end capturing output, you can use the <code>scriptEnd()</code> method.</p>
+<p>To capture output with a single method, you can also use the
+<code>scriptBlock()</code> method.</p></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="../classes/MeTools.View.Helper.HtmlHelper.html#method_scriptBlock">\MeTools\View\Helper\HtmlHelper::scriptBlock()</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>Options for the code block</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>A script tag or `null`</div>
+</div></div>
+</div>
+<a id="method_shareaholic"></a><div class="element clickable method public method_shareaholic " data-toggle="collapse" data-target=".method_shareaholic .collapse" title="public">
+<h2>Returns the Shareaholic "share buttons".</h2>
+<pre>shareaholic(string $appId) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Note that this code only renders the Shareaholic &quot;share button&quot;.
+To add the &quot;setup code&quot;, you have to use the <code>LayoutHelper</code>.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="#">\MeTools\View\Helper\MeTools\View\Helper\LayoutHelper::shareaholic()</a></td>
+</tr>
+<tr>
+<th>uses</th>
+<td><a href="#">\MeTools\View\Helper\div()</a></td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$appId</h4>
+<code>string</code><p>Shareaholic app ID</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_tag"></a><div class="element clickable method public method_tag " data-toggle="collapse" data-target=".method_tag .collapse" title="public">
+<h2>Returns a formatted block tag</h2>
+<pre>tag(string $name, string|null $text<code> = null</code>, array $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>Tag name</p></div>
+<div class="subelement argument">
+<h4>$text</h4>
+<code>string</code><code>null</code><p>Tag content. If <code>null</code>, only a start tag will be
+printed</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>Array of options and HTML attributes</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_ul"></a><div class="element clickable method public method_ul " data-toggle="collapse" data-target=".method_ul .collapse" title="public">
+<h2>Returns an unordered list (`&lt;ul&gt;` tag)</h2>
+<pre>ul(array $list, array $options<code> = array()</code>, array $itemOptions<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>uses</th>
+<td><a href="../classes/MeTools.View.Helper.HtmlHelper.html#method_nestedList">\MeTools\View\Helper\HtmlHelper::nestedList()</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$list</h4>
+<code>array</code><p>Elements list</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>HTML attributes of the list tag</p></div>
+<div class="subelement argument">
+<h4>$itemOptions</h4>
+<code>array</code><p>HTML attributes of the list items</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_viewport"></a><div class="element clickable method public method_viewport " data-toggle="collapse" data-target=".method_viewport .collapse" title="public">
+<h2>Adds the `viewport` meta tag. By default, it uses options as required
+ by Bootstrap</h2>
+<pre>viewport(array $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="http://getbootstrap.com/css/#overview-mobile">Bootstrap documentation</a></td>
+</tr>
+<tr>
+<th>uses</th>
+<td><a href="../classes/MeTools.View.Helper.HtmlHelper.html#method_meta">\MeTools\View\Helper\HtmlHelper::meta()</a></td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>Attributes for the generated tag. If the type
+attribute is html, rss, atom, or icon, the mime-type is returned</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_youtube"></a><div class="element clickable method public method_youtube " data-toggle="collapse" data-target=".method_youtube .collapse" title="public">
+<h2>Adds a YouTube video.</h2>
+<pre>youtube(string $id, array $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>You can use the <code>$ratio</code> option (valid values: <code>16by9</code> or <code>4by3</code>) to
+create a responsive embed.</p></div>
+<table class="table table-bordered"><tr>
+<th>uses</th>
+<td><a href="../classes/MeTools.View.Helper.HtmlHelper.html#method_iframe">\MeTools\View\Helper\HtmlHelper::iframe()</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>string</code><p>YouTube video ID</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>Array of options and HTML attributes</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<h3>
+<i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_helpers"> </a><div class="element clickable property public property_helpers" data-toggle="collapse" data-target=".property_helpers .collapse" title="public">
+<h2>Helpers</h2>
+<pre>$helpers : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array('MeTools.Icon', 'Url')</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.9.1</a> and<br>
+            generated on 2019-11-14T14:33:28+01:00.<br></footer></div>
+</div>
+</body>
+</html>

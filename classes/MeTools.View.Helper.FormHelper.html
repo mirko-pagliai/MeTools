@@ -1,0 +1,600 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>me-tools » \MeTools\View\Helper\FormHelper</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">me-tools</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/MeTools.html"><i class="icon-th"></i> MeTools</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">1</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+</div>
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list">
+<li class="nav-header">
+<i title="Methods" class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct() :: Construct the widgets and binds the default context providers."><span class="description">Construct the widgets and binds the default context providers.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_button" title="button() :: Creates a button."><span class="description">Creates a button.</span><pre>button()</pre></a></li>
+<li class="method public "><a href="#method_checkbox" title="checkbox() :: Creates a checkbox element"><span class="description">Creates a checkbox element</span><pre>checkbox()</pre></a></li>
+<li class="method public "><a href="#method_ckeditor" title="ckeditor() :: Creates a CKEditor textarea."><span class="description">Creates a CKEditor textarea.</span><pre>ckeditor()</pre></a></li>
+<li class="method public "><a href="#method_control" title="control() :: Generates an input element complete with label and wrapper div"><span class="description">Generates an input element complete with label and wrapper div</span><pre>control()</pre></a></li>
+<li class="method public "><a href="#method_create" title="create() :: Returns a `&lt;form&gt;` element."><span class="description">Returns a `&lt;form&gt;` element.</span><pre>create()</pre></a></li>
+<li class="method public "><a href="#method_createInline" title="createInline() :: Returns an inline form element."><span class="description">Returns an inline form element.</span><pre>createInline()</pre></a></li>
+<li class="method public "><a href="#method_datepicker" title="datepicker() :: Creates a datepicker."><span class="description">Creates a datepicker.</span><pre>datepicker()</pre></a></li>
+<li class="method public "><a href="#method_datetimepicker" title="datetimepicker() :: Creates a datetimepicker."><span class="description">Creates a datetimepicker.</span><pre>datetimepicker()</pre></a></li>
+<li class="method public "><a href="#method_end" title="end() :: Closes an HTML form, cleans up values set by `FormHelper::create()`,
+ and writes hidden input fields where appropriate"><span class="description">Closes an HTML form, cleans up values set by `FormHelper::create()`,
+ and writes hidden input fields where appropriate</span><pre>end()</pre></a></li>
+<li class="method public "><a href="#method_isInline" title="isInline() :: Checks if the current opened form is an inline form"><span class="description">Checks if the current opened form is an inline form</span><pre>isInline()</pre></a></li>
+<li class="method public "><a href="#method_label" title="label() :: Returns a formatted `&lt;label&gt;` element."><span class="description">Returns a formatted `&lt;label&gt;` element.</span><pre>label()</pre></a></li>
+<li class="method public "><a href="#method_postButton" title="postButton() :: Creates a button with a surrounding form that submits via POST."><span class="description">Creates a button with a surrounding form that submits via POST.</span><pre>postButton()</pre></a></li>
+<li class="method public "><a href="#method_postLink" title="postLink() :: Creates a link with a surrounding form that submits via POST."><span class="description">Creates a link with a surrounding form that submits via POST.</span><pre>postLink()</pre></a></li>
+<li class="method public "><a href="#method_select" title="select() :: Returns a formatted SELECT element"><span class="description">Returns a formatted SELECT element</span><pre>select()</pre></a></li>
+<li class="method public "><a href="#method_submit" title="submit() :: Creates a submit button"><span class="description">Creates a submit button</span><pre>submit()</pre></a></li>
+<li class="method public "><a href="#method_textarea" title="textarea() :: Creates a textarea widget"><span class="description">Creates a textarea widget</span><pre>textarea()</pre></a></li>
+<li class="method public "><a href="#method_timepicker" title="timepicker() :: Creates a timepicker."><span class="description">Creates a timepicker.</span><pre>timepicker()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul><li class="method protected "><a href="#method___datetimepickerOptions" title="__datetimepickerOptions() :: Internal method to get an `OptionParser` instance for datetime pickers"><span class="description">Internal method to get an `OptionParser` instance for datetime pickers</span><pre>__datetimepickerOptions()</pre></a></li></ul>
+</li>
+<li class="nav-header">
+<i title="Properties" class="icon-custom icon-property"></i> Properties
+                    <ul><li class="property public "><a href="#property_helpers" title="$helpers() :: Helpers"><span class="description"></span><pre>$helpers</pre></a></li></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul><li class="property protected "><a href="#property_inline" title="$inline() :: Property to check if we're working with an inline form."><span class="description"></span><pre>$inline</pre></a></li></ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a xmlns:php="http://php.net/xsl" id="\MeTools\View\Helper\FormHelper"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
+<li>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/MeTools.html">MeTools</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/MeTools.View.html">View</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/MeTools.View.Helper.html">Helper</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/MeTools.View.Helper.FormHelper.html">FormHelper</a>
+</li>
+</ul>
+<div xmlns:php="http://php.net/xsl" class="element class">
+<p class="short_description">Provides functionalities for forms</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+<h3>
+<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct " data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<h2>Construct the widgets and binds the default context providers.</h2>
+<pre>__construct(\MeTools\View\Helper\Cake\View\View $view, array $config<code> = array()</code>) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This method only rewrites the default templates config.</p></div>
+<table class="table table-bordered"><tr>
+<th>uses</th>
+<td><a href="#">\MeTools\View\Helper\$_defaultConfig</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$view</h4>
+<code>\MeTools\View\Helper\Cake\View\View</code><p>The View this helper is being attached to</p></div>
+<div class="subelement argument">
+<h4>$config</h4>
+<code>array</code><p>Configuration settings for the helper</p></div>
+</div></div>
+</div>
+<a id="method_button"></a><div class="element clickable method public method_button " data-toggle="collapse" data-target=".method_button .collapse" title="public">
+<h2>Creates a button.</h2>
+<pre>button(string|null $title<code> = null</code>, array $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This method creates a button. To create a POST button, you should use
+the <code>postButton()</code> method.
+Instead, to create a link with the appearance of a button, you should
+use the <code>button()</code> method provided by <code>HtmlHelper</code>.</p></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="#">MeTools\View\Helper\HtmlHelper::button()</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$title</h4>
+<code>string</code><code>null</code><p>The button label or an image</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>HTML attributes and options</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_checkbox"></a><div class="element clickable method public method_checkbox " data-toggle="collapse" data-target=".method_checkbox .collapse" title="public">
+<h2>Creates a checkbox element</h2>
+<pre>checkbox(string $fieldName, array $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$fieldName</h4>
+<code>string</code><p>Field name, should be "Modelname.fieldname"</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>HTML attributes and options</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_ckeditor"></a><div class="element clickable method public method_ckeditor " data-toggle="collapse" data-target=".method_ckeditor .collapse" title="public">
+<h2>Creates a CKEditor textarea.</h2>
+<pre>ckeditor(string $fieldName, array $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>To add the scripts for CKEditor, you should use the <code>LibraryHelper</code>.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="#">\MeTools\View\Helper\MeTools\View\Helper\LibraryHelper::ckeditor()</a></td>
+</tr>
+<tr>
+<th>uses</th>
+<td><a href="../classes/MeTools.View.Helper.FormHelper.html#method_control">\MeTools\View\Helper\FormHelper::control()</a></td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$fieldName</h4>
+<code>string</code><p>Field name, should be "Modelname.fieldname"</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>HTML attributes and options</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_control"></a><div class="element clickable method public method_control " data-toggle="collapse" data-target=".method_control .collapse" title="public">
+<h2>Generates an input element complete with label and wrapper div</h2>
+<pre>control(string $fieldName, array $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>uses</th>
+<td><a href="../classes/MeTools.View.Helper.FormHelper.html#property_inline">\MeTools\View\Helper\FormHelper::$inline</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$fieldName</h4>
+<code>string</code><p>Field name, should be "Modelname.fieldname"</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>HTML attributes and options</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_create"></a><div class="element clickable method public method_create " data-toggle="collapse" data-target=".method_create .collapse" title="public">
+<h2>Returns a `&lt;form&gt;` element.</h2>
+<pre>create(mixed $model<code> = null</code>, array $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>uses</th>
+<td><a href="../classes/MeTools.View.Helper.FormHelper.html#method_createInline">\MeTools\View\Helper\FormHelper::createInline()</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code>mixed</code><p>The model name for which the form is being defined.
+If <code>false</code> no model is used</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>HTML attributes and options</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>An formatted opening `<form>` tag</div>
+</div></div>
+</div>
+<a id="method_createInline"></a><div class="element clickable method public method_createInline " data-toggle="collapse" data-target=".method_createInline .collapse" title="public">
+<h2>Returns an inline form element.</h2>
+<pre>createInline(mixed $model<code> = null</code>, array $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>You can also create an inline form using the <code>create()</code> method with
+the <code>inline</code> option.</p>
+<p>Note that by default <code>createInline</code> doesn't display help blocks and
+errors.</p></div>
+<table class="table table-bordered"><tr>
+<th>uses</th>
+<td><a href="../classes/MeTools.View.Helper.FormHelper.html#property_inline">\MeTools\View\Helper\FormHelper::$inline</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code>mixed</code><p>The model name for which the form is being defined.
+If <code>false</code> no model is used</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>HTML attributes and options</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>An formatted opening `<form>` tag</div>
+</div></div>
+</div>
+<a id="method_datepicker"></a><div class="element clickable method public method_datepicker " data-toggle="collapse" data-target=".method_datepicker .collapse" title="public">
+<h2>Creates a datepicker.</h2>
+<pre>datepicker(string $fieldName, array $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>To add the scripts for datepicker, you should use the <code>LibraryHelper</code>.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="#">\MeTools\View\Helper\MeTools\View\Helper\LibraryHelper::datepicker()</a></td>
+</tr>
+<tr>
+<th>uses</th>
+<td><a href="../classes/MeTools.View.Helper.FormHelper.html#method___datetimepickerOptions">\MeTools\View\Helper\FormHelper::__datetimepickerOptions()</a></td>
+</tr>
+<tr>
+<th>uses</th>
+<td><a href="../classes/MeTools.View.Helper.FormHelper.html#method_control">\MeTools\View\Helper\FormHelper::control()</a></td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$fieldName</h4>
+<code>string</code><p>Field name, should be "Modelname.fieldname"</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>HTML attributes and options</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_datetimepicker"></a><div class="element clickable method public method_datetimepicker " data-toggle="collapse" data-target=".method_datetimepicker .collapse" title="public">
+<h2>Creates a datetimepicker.</h2>
+<pre>datetimepicker(string $fieldName, array $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>To add the scripts for datetimepicker, you should use the <code>LibraryHelper</code>.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="#">\MeTools\View\Helper\MeTools\View\Helper\LibraryHelper::datetimepicker()</a></td>
+</tr>
+<tr>
+<th>uses</th>
+<td><a href="../classes/MeTools.View.Helper.FormHelper.html#method___datetimepickerOptions">\MeTools\View\Helper\FormHelper::__datetimepickerOptions()</a></td>
+</tr>
+<tr>
+<th>uses</th>
+<td><a href="../classes/MeTools.View.Helper.FormHelper.html#method_control">\MeTools\View\Helper\FormHelper::control()</a></td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$fieldName</h4>
+<code>string</code><p>Field name, should be "Modelname.fieldname"</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>HTML attributes and options</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_end"></a><div class="element clickable method public method_end " data-toggle="collapse" data-target=".method_end .collapse" title="public">
+<h2>Closes an HTML form, cleans up values set by `FormHelper::create()`,
+ and writes hidden input fields where appropriate</h2>
+<pre>end(array $secureAttributes<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>uses</th>
+<td><a href="../classes/MeTools.View.Helper.FormHelper.html#property_inline">\MeTools\View\Helper\FormHelper::$inline</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$secureAttributes</h4>
+<code>array</code><p>Secure attibutes which will be passed
+ as HTML attributes into the hidden input elements generated for the
+ Security Component.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_isInline"></a><div class="element clickable method public method_isInline " data-toggle="collapse" data-target=".method_isInline .collapse" title="public">
+<h2>Checks if the current opened form is an inline form</h2>
+<pre>isInline() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_label"></a><div class="element clickable method public method_label " data-toggle="collapse" data-target=".method_label .collapse" title="public">
+<h2>Returns a formatted `&lt;label&gt;` element.</h2>
+<pre>label(string $fieldName, string $text<code> = null</code>, array|string $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Will automatically generate a <code>for</code> attribute if one is not provided.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$fieldName</h4>
+<code>string</code><p>Field name, should be "Modelname.fieldname"</p></div>
+<div class="subelement argument">
+<h4>$text</h4>
+<code>string</code><p>Text that will appear in the label field. If is
+ left undefined the text will be inflected from the fieldName</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><code>string</code><p>HTML attributes, or a string to be used
+ as a class name</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_postButton"></a><div class="element clickable method public method_postButton " data-toggle="collapse" data-target=".method_postButton .collapse" title="public">
+<h2>Creates a button with a surrounding form that submits via POST.</h2>
+<pre>postButton(string|null $title<code> = null</code>, string|array|null $url<code> = null</code>, array $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This method creates a button in a form element. So don't use this
+method in an already opened form.</p>
+<p>To create a normal button, you should use the <code>button()</code> method.
+To create a button with the appearance of a link, you should use the
+<code>button()</code> method provided by the <code>HtmlHelper</code>.</p></div>
+<table class="table table-bordered"><tr>
+<th>uses</th>
+<td><a href="../classes/MeTools.View.Helper.FormHelper.html#method_postLink">\MeTools\View\Helper\FormHelper::postLink()</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$title</h4>
+<code>string</code><code>null</code><p>Button title</p></div>
+<div class="subelement argument">
+<h4>$url</h4>
+<code>string</code><code>array</code><code>null</code><p>Cake-relative URL or array of URL
+parameters or external URL</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>Array of options and HTML attributes</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Html code</div>
+</div></div>
+</div>
+<a id="method_postLink"></a><div class="element clickable method public method_postLink " data-toggle="collapse" data-target=".method_postLink .collapse" title="public">
+<h2>Creates a link with a surrounding form that submits via POST.</h2>
+<pre>postLink(string|null $title<code> = null</code>, string|array|null $url<code> = null</code>, array $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This method creates a link in a form element. So don't use this method
+in an already opened form.</p>
+<p>To create a normal link, you should use the <code>link()</code> method of the
+<code>HtmlHelper</code>.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$title</h4>
+<code>string</code><code>null</code><p>The content to be wrapped by <a> tags</p></div>
+<div class="subelement argument">
+<h4>$url</h4>
+<code>string</code><code>array</code><code>null</code><p>Cake-relative URL or array of URL
+parameters or external URL</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>Array of options and HTML attributes</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_select"></a><div class="element clickable method public method_select " data-toggle="collapse" data-target=".method_select .collapse" title="public">
+<h2>Returns a formatted SELECT element</h2>
+<pre>select(string $fieldName, array|\Traversable $options<code> = array()</code>, array $attributes<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$fieldName</h4>
+<code>string</code><p>Name attribute of the SELECT</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><code>\Traversable</code><p>Array of the OPTION elements
+(as 'value'=>'Text' pairs) to be used in the SELECT element</p></div>
+<div class="subelement argument">
+<h4>$attributes</h4>
+<code>array</code><p>The HTML attributes of the select element</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_submit"></a><div class="element clickable method public method_submit " data-toggle="collapse" data-target=".method_submit .collapse" title="public">
+<h2>Creates a submit button</h2>
+<pre>submit(string $caption<code> = null</code>, array $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>uses</th>
+<td><a href="../classes/MeTools.View.Helper.FormHelper.html#method_button">\MeTools\View\Helper\FormHelper::button()</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$caption</h4>
+<code>string</code><p>The label appearing on the submit button or an
+ image</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>HTML attributes and options</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_textarea"></a><div class="element clickable method public method_textarea " data-toggle="collapse" data-target=".method_textarea .collapse" title="public">
+<h2>Creates a textarea widget</h2>
+<pre>textarea(string $fieldName, array $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$fieldName</h4>
+<code>string</code><p>Field name, should be "Modelname.fieldname"</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>HTML attributes and options</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_timepicker"></a><div class="element clickable method public method_timepicker " data-toggle="collapse" data-target=".method_timepicker .collapse" title="public">
+<h2>Creates a timepicker.</h2>
+<pre>timepicker(string $fieldName, array $options<code> = array()</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>To add the scripts for timepicker, you should use the <code>LibraryHelper</code>.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="#">\MeTools\View\Helper\MeTools\View\Helper\LibraryHelper::timepicker()</a></td>
+</tr>
+<tr>
+<th>uses</th>
+<td><a href="../classes/MeTools.View.Helper.FormHelper.html#method___datetimepickerOptions">\MeTools\View\Helper\FormHelper::__datetimepickerOptions()</a></td>
+</tr>
+<tr>
+<th>uses</th>
+<td><a href="../classes/MeTools.View.Helper.FormHelper.html#method_control">\MeTools\View\Helper\FormHelper::control()</a></td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$fieldName</h4>
+<code>string</code><p>Field name, should be "Modelname.fieldname"</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>HTML attributes and options</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method___datetimepickerOptions"></a><div class="element clickable method protected method___datetimepickerOptions " data-toggle="collapse" data-target=".method___datetimepickerOptions .collapse" title="protected">
+<h2>Internal method to get an `OptionParser` instance for datetime pickers</h2>
+<pre>__datetimepickerOptions(array $options, string $class, string $dateFormat) : \MeTools\View\OptionsParser</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>2.18.12</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>HTML attributes and options</p></div>
+<div class="subelement argument">
+<h4>$class</h4>
+<code>string</code><p>Class name</p></div>
+<div class="subelement argument">
+<h4>$dateFormat</h4>
+<code>string</code><p>Date time format</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\MeTools\View\OptionsParser</code></div>
+</div></div>
+</div>
+<h3>
+<i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_helpers"> </a><div class="element clickable property public property_helpers" data-toggle="collapse" data-target=".property_helpers .collapse" title="public">
+<h2>Helpers</h2>
+<pre>$helpers : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array('Html' => array('className' => 'MeTools.Html'), 'MeTools.Icon', 'Url')</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_inline"> </a><div class="element clickable property protected property_inline" data-toggle="collapse" data-target=".property_inline .collapse" title="protected">
+<h2>Property to check if we're working with an inline form.</h2>
+<pre>$inline : boolean</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>It's changed by <code>createInline()</code> method.</p></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.9.1</a> and<br>
+            generated on 2019-11-14T14:33:28+01:00.<br></footer></div>
+</div>
+</body>
+</html>
