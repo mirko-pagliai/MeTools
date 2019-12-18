@@ -838,7 +838,7 @@ To add the "setup code", you have to use the `LayoutHelper`.</long-description>
       </method>
     </class>
   </file>
-  <file path="TestSuite/MockTrait.php" generated-path="TestSuite.MockTrait.html" hash="9ce04f7cc38dfc78283fe31322965b5c" package="Default">
+  <file path="TestSuite/MockTrait.php" generated-path="TestSuite.MockTrait.html" hash="b430282c1d4b2b027cc7d097502db65a" package="Default">
     <docblock line="0">
       <description>This file is part of me-tools.</description>
       <long-description>Licensed under The MIT License
@@ -1004,7 +1004,7 @@ Redistributions of files must retain the above copyright notice.</long-descripti
       </method>
     </trait>
   </file>
-  <file path="Command/Install/RunAllCommand.php" generated-path="Command.Install.RunAllCommand.html" hash="714819ac98c8ee86f8f5b246f15e9c19" package="Default">
+  <file path="Command/Install/RunAllCommand.php" generated-path="Command.Install.RunAllCommand.html" hash="f77ec0cbbd150b4b4459c3916469e9a1" package="Default">
     <docblock line="0">
       <description>This file is part of me-tools.</description>
       <long-description>Licensed under The MIT License
@@ -2063,86 +2063,6 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         <argument line="0" by_reference="false">
           <name>$separator</name>
           <default>array()</default>
-          <type>array</type>
-        </argument>
-      </method>
-    </class>
-  </file>
-  <file path="View/Helper/BBCodeHelper.php" generated-path="View.Helper.BBCodeHelper.html" hash="f05ac4caed0580fc1777f5418292192e" package="Default">
-    <docblock line="0">
-      <description>This file is part of me-tools.</description>
-      <long-description>Licensed under The MIT License
-For full copyright and license information, please see the LICENSE.txt
-Redistributions of files must retain the above copyright notice.</long-description>
-      <tag name="copyright" line="0" description="Copyright (c) Mirko Pagliai"/>
-      <tag name="link" line="0" description="https://github.com/mirko-pagliai/me-tools" link="https://github.com/mirko-pagliai/me-tools"/>
-      <tag name="license" line="0" description="MIT License" link="https://opensource.org/licenses/mit-license.php"/>
-      <tag name="see" line="0" description="" link="\MeTools\Utility\BBCode"/>
-      <tag name="package" line="0" description="Default"/>
-    </docblock>
-    <namespace-alias name="Helper">\Cake\View\Helper</namespace-alias>
-    <namespace-alias name="BBCode">\MeTools\Utility\BBCode</namespace-alias>
-    <class final="false" abstract="false" namespace="MeTools\View\Helper" line="26" package="Default">
-      <extends>\Cake\View\Helper</extends>
-      <name>BBCodeHelper</name>
-      <full_name>\MeTools\View\Helper\BBCodeHelper</full_name>
-      <docblock line="26">
-        <description>BBCode Helper.</description>
-        <long-description>This helper allows you to handle some BBCode.
-The `parser()` method executes all parsers.</long-description>
-        <tag name="deprecated" line="26" description="2.18.14"/>
-        <tag name="package" line="26" description="Default"/>
-      </docblock>
-      <property static="false" visibility="public" namespace="MeTools\View\Helper" line="32" package="Default">
-        <name>$helpers</name>
-        <full_name>\MeTools\View\Helper\BBCodeHelper::$helpers</full_name>
-        <default>array('Html' =&gt; array('className' =&gt; 'MeTools.Html'))</default>
-        <docblock line="32">
-          <description>Helpers</description>
-          <long-description></long-description>
-          <tag name="var" line="32" description="" type="array" variable="">
-            <type>array</type>
-          </tag>
-        </docblock>
-      </property>
-      <property static="false" visibility="public" namespace="MeTools\View\Helper" line="38" package="Default">
-        <name>$BBCode</name>
-        <full_name>\MeTools\View\Helper\BBCodeHelper::$BBCode</full_name>
-        <default></default>
-        <docblock line="38">
-          <description>A `BBCode` instance</description>
-          <long-description></long-description>
-          <tag name="var" line="38" description="" type="\MeTools\Utility\BBCode" variable="">
-            <type>\MeTools\Utility\BBCode</type>
-          </tag>
-        </docblock>
-      </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="MeTools\View\Helper" line="47" package="Default">
-        <name>__call</name>
-        <full_name>\MeTools\View\Helper\BBCodeHelper::__call()</full_name>
-        <docblock line="47">
-          <description>Calls methods provided by the `BBCode` utility</description>
-          <long-description></long-description>
-          <tag name="param" line="47" description="&lt;p&gt;Method to invoke&lt;/p&gt;" type="string" variable="$method">
-            <type>string</type>
-          </tag>
-          <tag name="param" line="47" description="&lt;p&gt;Array of params for the method&lt;/p&gt;" type="array" variable="$params">
-            <type>array</type>
-          </tag>
-          <tag name="return" line="47" description="" type="mixed|void">
-            <type>mixed</type>
-            <type>void</type>
-          </tag>
-          <tag name="uses" line="47" description="" link="\MeTools\Utility\BBCode"/>
-        </docblock>
-        <argument line="0" by_reference="false">
-          <name>$method</name>
-          <default></default>
-          <type>string</type>
-        </argument>
-        <argument line="0" by_reference="false">
-          <name>$params</name>
-          <default></default>
           <type>array</type>
         </argument>
       </method>
@@ -3985,7 +3905,7 @@ Redistributions of files must retain the above copyright notice.</long-descripti
       </method>
     </class>
   </file>
-  <file path="Plugin.php" generated-path="Plugin.html" hash="330ed6c545bc4bddc0effa7aaae92aa8" package="Default">
+  <file path="Plugin.php" generated-path="Plugin.html" hash="4e4ca90b44edbbdef6c61c0bf06886d3" package="Default">
     <docblock line="0">
       <description>This file is part of me-tools.</description>
       <long-description>Licensed under The MIT License
@@ -7343,5 +7263,5 @@ Redistributions of files must retain the above copyright notice.</long-descripti
       <namespace name="Widget" full_name="MeTools\View\Widget"/>
     </namespace>
   </namespace>
-  <deprecated count="1"/>
+  <deprecated count="0"/>
 </project>
