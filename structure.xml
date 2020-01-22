@@ -355,7 +355,7 @@
       <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
     </parse_markers>
   </file>
-  <file path="View/Helper/IconHelper.php" generated-path="View.Helper.IconHelper.html" hash="9bf7058b8a73f4a4ebf30e553cf8ef6f" package="Default">
+  <file path="View/Helper/IconHelper.php" generated-path="View.Helper.IconHelper.html" hash="ba49f72fb79f29ecb4f7a0f183a53261" package="Default">
     <docblock line="0">
       <description></description>
       <long-description></long-description>
@@ -451,7 +451,7 @@ Returns:
           <tag name="return" line="98" description="" type="string">
             <type>string</type>
           </tag>
-          <tag name="see" line="98" description="Font Awesome icons" link="http://fortawesome.github.io/Font-Awesome"/>
+          <tag name="see" line="98" description="Font Awesome icons" link="http://fontawesome.com"/>
           <tag name="uses" line="98" description="" link="\MeTools\View\Helper\IconHelper::buildIconClasses()"/>
         </docblock>
         <argument line="0" by_reference="false">
@@ -475,7 +475,7 @@ Returns:
       <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
     </parse_markers>
   </file>
-  <file path="Plugin.php" generated-path="Plugin.html" hash="48ebd32affdd9e9c05c3b2556b4abd27" package="Default">
+  <file path="Plugin.php" generated-path="Plugin.html" hash="d28794c19fb039d9992722ee737e260b" package="Default">
     <docblock line="0">
       <description></description>
       <long-description></long-description>
